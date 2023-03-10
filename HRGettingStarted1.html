@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-03-05 Sun 10:45 -->
+<!-- 2023-03-07 Tue 10:13 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Haskell Road; Getting Started Part 1</title>
@@ -83,6 +83,8 @@
       <a href="preliminaries.html" target="_blank"><li>Rabbit Holes</li></a>
       <li>Numbers</li>
       <ul>
+         <a href="HRGettingStarted1.html" target="_blank"><li>Getting Started 1</li></a>
+         <a href="HRGettingStarted2.html" target="_blank"><li>Getting Started 2</li></a>
          <a href="numbers1.html" target="_blank"><li>Numbers 1</li></a>
          <a href="numbers2.html" target="_blank"><li>Numbers 2</li></a>
       </ul>
@@ -92,18 +94,17 @@
 </div>
 </p>
 
-<div id="outline-container-orgcde7fd6" class="outline-2">
-<h2 id="orgcde7fd6">Getting started part 1</h2>
+<div id="outline-container-orged58b41" class="outline-2">
+<h2 id="orged58b41">Getting started part 1</h2>
 </div>
 
-
-<div id="outline-container-orgde8daf5" class="outline-2">
-<h2 id="orgde8daf5">Monday at the library part 1</h2>
-<div class="outline-text-2" id="text-orgde8daf5">
+<div id="outline-container-org6eee351" class="outline-2">
+<h2 id="org6eee351">Monday at the library part 1</h2>
+<div class="outline-text-2" id="text-org6eee351">
 </div>
-<div id="outline-container-orgd31de37" class="outline-3">
-<h3 id="orgd31de37">Fractions</h3>
-<div class="outline-text-3" id="text-orgd31de37">
+<div id="outline-container-org184ba24" class="outline-3">
+<h3 id="org184ba24">Fractions</h3>
+<div class="outline-text-3" id="text-org184ba24">
 <p>
 It&rsquo;s a Monday morning in late July and the von der Surwitz siblings
 meet in a reserved study room at the main university library to go
@@ -178,8 +179,8 @@ might not take it after all. Wow.<br />
 <span class="fraktur">𝔘𝔱𝔢:</span> Bottom line: We&rsquo;ve
 got a once-in-a-lifetime chance to really learn a ton about
 comp-sci. Yeah, psyched! <br />
-<span class="fraktur">𝔘𝔴𝔢:</span> Now all we have to do
-is hang on for dear life! <br />
+<span class="fraktur">𝔘𝔴𝔢:</span> Now all we have to
+do is hang on for dear life! <br />
 [laughter] <br />
 <span class="fraktur">𝔘𝔯𝔰𝔲𝔩𝔞:</span> [paging through
 <i>Haskell Road&#x2026;</i> ] Did anyone look at the first chapter? <br />
@@ -202,6 +203,32 @@ does anyone remember why the Greeks said, for example, \(7\) <i>measures</i>
 because a rod or measuring tape that&rsquo;s \(7\) units long can then measure
 out a length of \(35\) perfectly? <br />
 [murmurs of agreement] <br />
+<span class="fraktur">𝔘𝔴𝔢:</span> Oh, and do you
+remember the whole Euclid thing about the <i>transitivity of equality</i>?
+[murmurs of affirmation] <br />
+<span class="fraktur">𝔘𝔯𝔰𝔲𝔩𝔞:</span> Yeah, Herr
+Adriansen, Danish minority from Schleswig. Cool accent. Made fun of
+Frisians. He gave us that little talk about why old-school Euclidean
+Geometry was so important. <br />
+<span class="fraktur">𝔘𝔴𝔢:</span> Yes, because you
+have to get used to the idea that math is built up from logical
+deductions that in turn are based on axioms. <br />
+<span class="fraktur">𝔘𝔱𝔢:</span> And he complained
+bitterly about how math was being taught, how it was sliding into just
+circus animals learning by conditioning. <br />
+<span class="fraktur">𝔘𝔴𝔢:</span> The whole, <i>when
+you see this, do this</i> approach to math.<label for="2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="2" class="margin-toggle"/><span class="sidenote">
+Take a break and check out this theory treatment.
+</span>
+</p>
+
+
+
+
+
+
+
+<p>
 <span class="fraktur">𝔘𝔯𝔰𝔲𝔩𝔞:</span> Well, I
 remember prime factorization was based on the <a href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic">Fundamental Theorem of
 Arithmetic</a> from dear old Euclid. [bringing up the Wikipedia article
@@ -225,7 +252,7 @@ opposite direction. <br />
 [laughter] <br />
 <span class="fraktur">𝔘𝔱𝔢:</span> Wasn&rsquo;t it amazing
 how Professor Chandra just put two fractions with huge unlike
-denominators into the Racket command line<label for="2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="2" class="margin-toggle"/><span class="sidenote">
+denominators into the Racket command line<label for="3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="3" class="margin-toggle"/><span class="sidenote">
 Professor Chandra has demonstrated at the Racket command line
 how rationals could be directly added, e.g., <br />
 <code>&gt; (+ 1/32 1/943720)</code> <br />
@@ -238,7 +265,7 @@ me install it? <br />
 Racket in a terminal] Here, I&rsquo;ll just try something. [typing] <br />
 </p>
 
-<pre class="example" id="org440b8dd">
+<pre class="example" id="org833fa9f">
 &gt; (+ 1/15 1/85)
 4/51
 </pre>
@@ -370,14 +397,14 @@ org-mode Babel source block] <br />
 </code></pre>
 
 <pre class="example">
-&lt;interactive&gt;:169:1-9: error:
+&lt;interactive&gt;:7:1-9: error:
     Variable not in scope: crossMult :: t0 -&gt; t1 -&gt; t2 -&gt; t
 </pre>
 
 
 <p>
 <span class="fraktur">𝔘𝔴𝔢:</span> So you&rsquo;re doing an
-anonymous function<label for="3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="3" class="margin-toggle"/><span class="sidenote">
+anonymous function<label for="4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="4" class="margin-toggle"/><span class="sidenote">
 Check out anonymous or <i>lambda</i> functions <a href="http://learnyouahaskell.com/higher-order-functions#lambdas">here</a>.
 </span>, right? <br />
 <span class="fraktur">𝔘𝔯𝔰𝔲𝔩𝔞:</span> Right. Yeah,
@@ -412,7 +439,7 @@ Actually, I could have done it this way [typing in new source block]
 </code></pre>
 
 <pre class="example">
-&lt;interactive&gt;:173:1-10: error:
+&lt;interactive&gt;:11:1-10: error:
     Variable not in scope: crossMult2 :: t0 -&gt; t1 -&gt; t2 -&gt; t
 </pre>
 
@@ -469,7 +496,7 @@ class adds a property or trait to types. It&rsquo;s starting to get clearer
 &#x2014; maybe. <br />
 [murmurs of agreement] <br />
 <span class="fraktur">𝔘𝔯𝔰𝔲𝔩𝔞:</span> Let me go to a
-link on <a href="https://stackoverflow.com/questions/35950600/why-it-is-impossible-to-divide-integer-number-in-haskell">stackoverflow</a> that talks about this<label for="4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="4" class="margin-toggle"/><span class="sidenote">
+link on <a href="https://stackoverflow.com/questions/35950600/why-it-is-impossible-to-divide-integer-number-in-haskell">stackoverflow</a> that talks about this<label for="5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="5" class="margin-toggle"/><span class="sidenote">
 See <a href="https://stackoverflow.com/questions/35950600/why-it-is-impossible-to-divide-integer-number-in-haskell">Why it is impossible to divide Integer number in Haskell?</a>
 </span>. Getting
 there&#x2026; [displays post on monitor] Right. So the original post has
@@ -484,7 +511,7 @@ In an equation for ‘it’: it = (4 :: Integer) / 2
 </pre>
 
 
-<pre class="example" id="orgbebb5b5">
+<pre class="example" id="orga14683d">
 &lt;interactive&gt;:36:16: error:
     • No instance for (Fractional Integer) arising from a use of ‘/’
     • In the expression: (4 :: Integer) / 2
@@ -504,7 +531,7 @@ it ineligible for doing regular <i>fractional</i> division. <br />
 the type and class system behind all this doesn&rsquo;t allow it. <br />
 <span class="fraktur">𝔘𝔯𝔰𝔲𝔩𝔞:</span> Yes, as far as
 I can tell. Did you get through the <i>Learn You&#x2026;</i> part on type
-classes<label for="5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="5" class="margin-toggle"/><span class="sidenote">
+classes<label for="6" class="margin-toggle sidenote-number"></label><input type="checkbox" id="6" class="margin-toggle"/><span class="sidenote">
 See <a href="http://learnyouahaskell.com/types-and-typeclasses#typeclasses-101">Typeclasses 101</a> in <i>Learn You a Haskell&#x2026;</i>.
 </span>? <br />
 <span class="fraktur">𝔘𝔴𝔢:</span> Yes, but&#x2026; <br />
@@ -526,6 +553,11 @@ the ghci REPL] Here, see?
 </code></pre>
 
 <pre class="example">
+&lt;interactive&gt;:21:1-5: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Double’
+        (Show a0) arising from a use of ‘print’ at &lt;interactive&gt;:21:1-5
+        (Fractional a0) arising from a use of ‘it’ at &lt;interactive&gt;:21:1-5
+    • In a stmt of an interactive GHCi command: print it
 2.0
 </pre>
 
@@ -545,7 +577,7 @@ the professor said we shouldn&rsquo;t think of literal numbers like
 </code></pre>
 
 <pre class="example">
-1 :: Num p =&gt; p
+1 :: Num a =&gt; a
 </pre>
 
 
@@ -563,6 +595,11 @@ into REPL]
 </code></pre>
 
 <pre class="example">
+&lt;interactive&gt;:25:1-11: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Integer’
+        (Show a0) arising from a use of ‘print’ at &lt;interactive&gt;:25:1-11
+        (Integral a0) arising from a use of ‘it’ at &lt;interactive&gt;:25:1-11
+    • In a stmt of an interactive GHCi command: print it
 2
 </pre>
 
@@ -577,6 +614,11 @@ whole numbers [typing into REPL]
 </code></pre>
 
 <pre class="example">
+&lt;interactive&gt;:27:1-5: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Double’
+        (Show a0) arising from a use of ‘print’ at &lt;interactive&gt;:27:1-5
+        (Fractional a0) arising from a use of ‘it’ at &lt;interactive&gt;:27:1-5
+    • In a stmt of an interactive GHCi command: print it
 2.5
 </pre>
 
@@ -615,7 +657,7 @@ got
 </code></pre>
 
 <pre class="example">
-&lt;interactive&gt;:195:1-9: error:
+&lt;interactive&gt;:33:1-9: error:
     Variable not in scope: crossMult :: t0 -&gt; t1 -&gt; t2 -&gt; t
 </pre>
 
@@ -666,7 +708,7 @@ Racket&rsquo;s REPL] So first, here&rsquo;s a contrived example where I know bot
 have \(2^{2}\)
 </p>
 
-<pre class="example" id="orgd2c441c">
+<pre class="example" id="org8dedda2">
 &gt; (+ 1/20 1/28)
 3/35
 </pre>
@@ -684,7 +726,7 @@ in one denominator and the same prime <i>to a higher power</i> in the other
 command line]
 </p>
 
-<pre class="example" id="org0e1f958">
+<pre class="example" id="orga9dedda">
 &gt; (+ 1/88 1/80)
 21/880
 </pre>
@@ -707,16 +749,16 @@ check all this?  <br />
 not yet. And I say that because <i>The Haskell Road&#x2026;</i> has a way we
 should learn. I looked at it. <br />
 <span class="fraktur">𝔘𝔯𝔰𝔲𝔩𝔞:</span> Well, I asked
-Mutti<label for="6" class="margin-toggle sidenote-number"></label><input type="checkbox" id="6" class="margin-toggle"/><span class="sidenote">
+Mutti<label for="7" class="margin-toggle sidenote-number"></label><input type="checkbox" id="7" class="margin-toggle"/><span class="sidenote">
 German for <i>mom</i>, <i>mama</i>.
 </span> about this &#x2014; and she said we should look into the <i>least
 common multiple</i>, because that&rsquo;s what this lowest common denominator
 issue is all about. And yes, I knew that but had forgotten. So here&rsquo;s
-the Wikipedia article on it<label for="7" class="margin-toggle sidenote-number"></label><input type="checkbox" id="7" class="margin-toggle"/><span class="sidenote">
+the Wikipedia article on it<label for="8" class="margin-toggle sidenote-number"></label><input type="checkbox" id="8" class="margin-toggle"/><span class="sidenote">
 See the article <a href="https://en.wikipedia.org/wiki/Least_common_multiple">here</a>.
 </span>. [displays page on monitor] <br />
 <span class="fraktur">𝔘𝔴𝔢:</span> [mumbling the
-first sentence<label for="8" class="margin-toggle sidenote-number"></label><input type="checkbox" id="8" class="margin-toggle"/><span class="sidenote">
+first sentence<label for="9" class="margin-toggle sidenote-number"></label><input type="checkbox" id="9" class="margin-toggle"/><span class="sidenote">
 <font color = "#0d3db3">&#x2026;In arithmetic and number
 theory, the <i>least common multiple</i>, <i>lowest common multiple</i>, or
 <i>smallest common multiple</i> of two integers \(a\) and \(b\:\), usually
@@ -734,7 +776,7 @@ thought \(35\) was the common denominator for all situations. But watch,
 I&rsquo;ll put in some different numerators
 </p>
 
-<pre class="example" id="org81ec10c">
+<pre class="example" id="orgabf54ec">
 &gt; (+ 5/20 11/28)
 9/14
 &gt; (+ 1/20 11/28)
@@ -758,7 +800,7 @@ the numerators [typing]
 </code></pre>
 
 <pre class="example">
-&lt;interactive&gt;:197:1-9: error:
+&lt;interactive&gt;:35:1-9: error:
     Variable not in scope: crossMult :: t0 -&gt; t1 -&gt; t2 -&gt; t
 </pre>
 
@@ -767,7 +809,7 @@ the numerators [typing]
 </code></pre>
 
 <pre class="example">
-&lt;interactive&gt;:199:1-9: error:
+&lt;interactive&gt;:37:1-9: error:
     Variable not in scope: crossMult :: t0 -&gt; t1 -&gt; t2 -&gt; t
 </pre>
 
@@ -814,7 +856,7 @@ Now for denominators \(15\) and \(85\) like before
 </code></pre>
 
 <pre class="example">
-&lt;interactive&gt;:201:1-5: error:
+&lt;interactive&gt;:39:1-5: error:
     Variable not in scope: myLCM :: t0 -&gt; t1 -&gt; t
 </pre>
 
@@ -829,7 +871,7 @@ you lost me on the <code>(*dnom1)</code> and <code>(*dnom2)</code>. What&rsquo;s
 <br />
 <span class="fraktur">𝔘𝔯𝔰𝔲𝔩𝔞:</span> That&rsquo;s what
 they call a <i>section</i>. I got that the other day from <i>A Gentle
-Introduction to Haskell</i><label for="9" class="margin-toggle sidenote-number"></label><input type="checkbox" id="9" class="margin-toggle"/><span class="sidenote">
+Introduction to Haskell</i><label for="10" class="margin-toggle sidenote-number"></label><input type="checkbox" id="10" class="margin-toggle"/><span class="sidenote">
 Available <a href="https://www.haskell.org/tutorial/">here</a>. The page dealing with <i>sections</i> is <a href="https://www.haskell.org/tutorial/functions.html">here</a> in
 3.2.1. Also The <a href="https://wiki.haskell.org/Section_of_an_infix_operator">wiki.haskell.org</a> has a page on sections as well.
 </span>. Basically, <code>*dnom1</code> is made into a
@@ -841,10 +883,22 @@ dnom1</code>. Here&rsquo;s an example [typing into the ghci REPL]
 <pre class="code"><code><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-haskell-operator">*</span>2<span class="org-rainbow-delimiters-depth-1">)</span>5 <span class="org-haskell-operator">==</span> <span class="org-rainbow-delimiters-depth-1">(</span>2<span class="org-haskell-operator">*</span><span class="org-rainbow-delimiters-depth-1">)</span>5 
 </code></pre>
 
-<pre class="example">
+<pre class="example" id="org35a80e3">
+&lt;interactive&gt;:41:7-8: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Integer’
+        (Eq a0) arising from a use of ‘==’ at &lt;interactive&gt;:41:7-8
+        (Num a0) arising from a use of ‘*’ at &lt;interactive&gt;:41:2
+    • In the expression: (* 2) 5 == (2 *) 5
+      In an equation for ‘it’: it = (* 2) 5 == (2 *) 5
+
+&lt;interactive&gt;:41:7-8: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Integer’
+        (Eq a0) arising from a use of ‘==’ at &lt;interactive&gt;:41:7-8
+        (Num a0) arising from a use of ‘*’ at &lt;interactive&gt;:41:2
+    • In the expression: (* 2) 5 == (2 *) 5
+      In an equation for ‘it’: it = (* 2) 5 == (2 *) 5
 True
 </pre>
-
 
 <p>
 <span class="fraktur">𝔘𝔯𝔰𝔲𝔩𝔞:</span> [continuing]
@@ -856,18 +910,60 @@ example [typing]
 <pre class="code"><code><span class="org-rainbow-delimiters-depth-1">(</span>2<span class="org-haskell-operator">^</span><span class="org-rainbow-delimiters-depth-1">)</span>3
 </code></pre>
 
-<pre class="example">
+<pre class="example" id="org9083512">
+&lt;interactive&gt;:43:1-5: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Integer’
+        (Show a0) arising from a use of ‘print’ at &lt;interactive&gt;:43:1-5
+        (Num a0) arising from a use of ‘it’ at &lt;interactive&gt;:43:1-5
+    • In a stmt of an interactive GHCi command: print it
+
+&lt;interactive&gt;:43:2-3: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Integer’
+        (Integral b0)
+          arising from an operator section at &lt;interactive&gt;:43:2-3
+        (Num b0) arising from the literal ‘3’ at &lt;interactive&gt;:43:5
+    • In the expression: 2 ^
+      In the expression: (2 ^) 3
+      In an equation for ‘it’: it = (2 ^) 3
+
+&lt;interactive&gt;:43:2-3: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Integer’
+        (Integral b0)
+          arising from an operator section at &lt;interactive&gt;:43:2-3
+        (Num b0) arising from the literal ‘3’ at &lt;interactive&gt;:43:5
+    • In the expression: 2 ^
+      In the expression: (2 ^) 3
+      In an equation for ‘it’: it = (2 ^) 3
 8
 </pre>
-
 
 <pre class="code"><code><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-haskell-operator">^</span>2<span class="org-rainbow-delimiters-depth-1">)</span>3
 </code></pre>
 
-<pre class="example">
+<pre class="example" id="orgb658512">
+&lt;interactive&gt;:45:1-5: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Integer’
+        (Show a0) arising from a use of ‘print’ at &lt;interactive&gt;:45:1-5
+        (Num a0) arising from a use of ‘it’ at &lt;interactive&gt;:45:1-5
+    • In a stmt of an interactive GHCi command: print it
+
+&lt;interactive&gt;:45:2: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Integer’
+        (Integral a0) arising from a use of ‘^’ at &lt;interactive&gt;:45:2
+        (Num a0) arising from the literal ‘2’ at &lt;interactive&gt;:45:3
+    • In the expression: (^)
+      In the expression: (^ 2) 3
+      In an equation for ‘it’: it = (^ 2) 3
+
+&lt;interactive&gt;:45:2: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Integer’
+        (Integral a0) arising from a use of ‘^’ at &lt;interactive&gt;:45:2
+        (Num a0) arising from the literal ‘2’ at &lt;interactive&gt;:45:3
+    • In the expression: (^)
+      In the expression: (^ 2) 3
+      In an equation for ‘it’: it = (^ 2) 3
 9
 </pre>
-
 
 <p>
 <span class="fraktur">𝔘𝔯𝔰𝔲𝔩𝔞:</span> [continuing] So
@@ -882,6 +978,11 @@ down this rabbit hole, I could write something like this [typing]
 </code></pre>
 
 <pre class="example">
+&lt;interactive&gt;:49:1-12: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Integer’
+        (Show a0) arising from a use of ‘print’ at &lt;interactive&gt;:49:1-12
+        (Num a0) arising from a use of ‘it’ at &lt;interactive&gt;:49:1-12
+    • In a stmt of an interactive GHCi command: print it
 10
 </pre>
 
@@ -905,7 +1006,7 @@ according to <i>The Gentle Introduction&#x2026;</i> we&rsquo;ve got [writing on 
 board]
 </p>
 
-<pre class="example" id="orgf8142d3">
+<pre class="example" id="orgc0adab9">
 (+) = \x y -&gt; x + y
 </pre>
 
@@ -917,7 +1018,7 @@ parentheses, right? <br />
 packaging up a common operator like plus or times, and maybe a
 variable, to work as a function. <br />
 <span class="fraktur">𝔘𝔴𝔢:</span> <i>Luft von anderem
-Planeten</i><label for="10" class="margin-toggle sidenote-number"></label><input type="checkbox" id="10" class="margin-toggle"/><span class="sidenote">
+Planeten</i><label for="11" class="margin-toggle sidenote-number"></label><input type="checkbox" id="11" class="margin-toggle"/><span class="sidenote">
 A famous line from a Stefan Georg poem: <i>Ich fühle Luft von
 anderem Planeten</i> or <i>I feel (the) air of (the other) another planet.</i>
 </span> <br />
@@ -936,7 +1037,7 @@ function [writes on the board]
 I&rsquo;m guessing that this creates a <i>list of functions</i> like [writing]
 </p>
 
-<pre class="example" id="org8563b2f">
+<pre class="example" id="org35e7f74">
 [(1+),(2+),(3+)]
 </pre>
 
@@ -949,6 +1050,11 @@ test it [typing]
 </code></pre>
 
 <pre class="example">
+&lt;interactive&gt;:55:1-35: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Integer’
+        (Show b0) arising from a use of ‘print’ at &lt;interactive&gt;:55:1-35
+        (Num b0) arising from a use of ‘it’ at &lt;interactive&gt;:55:1-35
+    • In a stmt of an interactive GHCi command: print it
 [4,5,6]
 </pre>
 
@@ -967,7 +1073,8 @@ is using the Haskell index operator <code>!!</code> to say &ldquo;give me the th
 element,&rdquo; which is the function <code>(3+)</code>. Even though it says <code>2</code>, the
 index starts at <code>0</code>, so the third function in <code>myListOfAddFuncs</code> is
 <code>(3+)</code> and <code>map</code> then applies it across <code>[1,2,3]</code> giving <code>[4,5,6]</code>
-since it adds <code>3</code> to each element of the input list. See? <br />
+since it adds <code>3</code> to each element of the input list. See?
+<i>Verstanden?</i> <br />
 [nods and murmurs of agreement] <br />
 <span class="fraktur">𝔘𝔴𝔢:</span> So back to the &#x2014;
 list comprehension? Is that what it&rsquo;s called? <br />
@@ -975,7 +1082,7 @@ list comprehension? Is that what it&rsquo;s called? <br />
 [scrolling back]
 </p>
 
-<pre class="example" id="org3368b8a">
+<pre class="example" id="org42cec08">
 myLCM dnom1 dnom2
   = take 1  [((*dnom1)x) | x &lt;- [1..200],
              y &lt;- [1..200],
@@ -986,24 +1093,24 @@ myLCM dnom1 dnom2
 </code></pre>
 
 <pre class="example">
-&lt;interactive&gt;:219:1-5: error:
+&lt;interactive&gt;:57:1-5: error:
     Variable not in scope: myLCM :: t0 -&gt; t1 -&gt; t
 </pre>
 
 
 <p>
 <span class="fraktur">𝔘𝔯𝔰𝔲𝔩𝔞:</span> So this is a
-<i>list comprehension</i><label for="11" class="margin-toggle sidenote-number"></label><input type="checkbox" id="11" class="margin-toggle"/><span class="sidenote">
+<i>list comprehension</i><label for="12" class="margin-toggle sidenote-number"></label><input type="checkbox" id="12" class="margin-toggle"/><span class="sidenote">
 See <a href="http://learnyouahaskell.com/starting-out#im-a-list-comprehension">this</a> from LYAHFGG.
 </span>, and a list comprehension is just the
 Haskell version of a set comprehension or <i>set-builder
-notation</i><label for="12" class="margin-toggle sidenote-number"></label><input type="checkbox" id="12" class="margin-toggle"/><span class="sidenote">
+notation</i><label for="13" class="margin-toggle sidenote-number"></label><input type="checkbox" id="13" class="margin-toggle"/><span class="sidenote">
 See Wikipedia&rsquo;s <a href="https://en.wikipedia.org/wiki/Set-builder_notation">Set-builder notation</a>
 </span> from set theory. And it&rsquo;s going through the multiples
 of \(15\) and \(85\), one after the other like this [writing on the board]
 </p>
 
-<pre class="example" id="orge739343">
+<pre class="example" id="org0ac4c93">
 15 30 45 60 75 90 105 120 ... 240 255
 85 170 225
 </pre>
@@ -1022,16 +1129,16 @@ intervals in all possible combinations &#x2014; this time only the first
 \(15\) multiples of \(15\) and \(85\:\) so it doesn&rsquo;t get too big
 </p>
 
-<pre class="example" id="orgcd48824">
+<pre class="example" id="org03b526a">
 myLCM2 dnom1 dnom2 = [((*dnom1)x,(*dnom2)y) |
                          x &lt;- [1..15], y &lt;- [1..15] ]
 </pre>
 
-<pre class="example" id="org815405d">
+<pre class="example" id="orgb323975">
 myLCM2 15 85
 </pre>
 
-<pre class="example" id="org360e90b">
+<pre class="example" id="org73908a7">
 [(15,85),(15,170),(15,255),(15,340),(15,425),(15,510),(15,595),(15,680),
 (15,765),(15,850),(15,935),(15,1020),(15,1105),(15,1190),(15,1275),
 (30,85),(30,170),(30,255),(30,340),(30,425),(30,510),(30,595),(30,680),
@@ -1116,6 +1223,10 @@ German for <i>dad</i>, <i>papa</i>.
 </p></div></div>
 
 <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Take a break and check out this theory treatment.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 Professor Chandra has demonstrated at the Racket command line
 how rationals could be directly added, e.g., <br />
 <code>&gt; (+ 1/32 1/943720)</code> <br />
@@ -1123,27 +1234,27 @@ and get back <br />
 <code>117969/3774880</code>
 </p></div></div>
 
-<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 Check out anonymous or <i>lambda</i> functions <a href="http://learnyouahaskell.com/higher-order-functions#lambdas">here</a>.
 </p></div></div>
 
-<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 See <a href="https://stackoverflow.com/questions/35950600/why-it-is-impossible-to-divide-integer-number-in-haskell">Why it is impossible to divide Integer number in Haskell?</a>
 </p></div></div>
 
-<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6" role="doc-backlink">6</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 See <a href="http://learnyouahaskell.com/types-and-typeclasses#typeclasses-101">Typeclasses 101</a> in <i>Learn You a Haskell&#x2026;</i>.
 </p></div></div>
 
-<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6" role="doc-backlink">6</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<div class="footdef"><sup><a id="fn.7" class="footnum" href="#fnr.7" role="doc-backlink">7</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 German for <i>mom</i>, <i>mama</i>.
 </p></div></div>
 
-<div class="footdef"><sup><a id="fn.7" class="footnum" href="#fnr.7" role="doc-backlink">7</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<div class="footdef"><sup><a id="fn.8" class="footnum" href="#fnr.8" role="doc-backlink">8</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 See the article <a href="https://en.wikipedia.org/wiki/Least_common_multiple">here</a>.
 </p></div></div>
 
-<div class="footdef"><sup><a id="fn.8" class="footnum" href="#fnr.8" role="doc-backlink">8</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<div class="footdef"><sup><a id="fn.9" class="footnum" href="#fnr.9" role="doc-backlink">9</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 <font color = "#0d3db3">&#x2026;In arithmetic and number
 theory, the <i>least common multiple</i>, <i>lowest common multiple</i>, or
 <i>smallest common multiple</i> of two integers \(a\) and \(b\:\), usually
@@ -1151,21 +1262,21 @@ denoted by \(lcm(a, b)\:\), is the smallest positive integer that is
 divisible by both \(a\) and \(b\;\)&#x2026;</font>
 </p></div></div>
 
-<div class="footdef"><sup><a id="fn.9" class="footnum" href="#fnr.9" role="doc-backlink">9</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<div class="footdef"><sup><a id="fn.10" class="footnum" href="#fnr.10" role="doc-backlink">10</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 Available <a href="https://www.haskell.org/tutorial/">here</a>. The page dealing with <i>sections</i> is <a href="https://www.haskell.org/tutorial/functions.html">here</a> in
 3.2.1. Also The <a href="https://wiki.haskell.org/Section_of_an_infix_operator">wiki.haskell.org</a> has a page on sections as well.
 </p></div></div>
 
-<div class="footdef"><sup><a id="fn.10" class="footnum" href="#fnr.10" role="doc-backlink">10</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<div class="footdef"><sup><a id="fn.11" class="footnum" href="#fnr.11" role="doc-backlink">11</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 A famous line from a Stefan Georg poem: <i>Ich fühle Luft von
 anderem Planeten</i> or <i>I feel (the) air of (the other) another planet.</i>
 </p></div></div>
 
-<div class="footdef"><sup><a id="fn.11" class="footnum" href="#fnr.11" role="doc-backlink">11</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<div class="footdef"><sup><a id="fn.12" class="footnum" href="#fnr.12" role="doc-backlink">12</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 See <a href="http://learnyouahaskell.com/starting-out#im-a-list-comprehension">this</a> from LYAHFGG.
 </p></div></div>
 
-<div class="footdef"><sup><a id="fn.12" class="footnum" href="#fnr.12" role="doc-backlink">12</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<div class="footdef"><sup><a id="fn.13" class="footnum" href="#fnr.13" role="doc-backlink">13</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 See Wikipedia&rsquo;s <a href="https://en.wikipedia.org/wiki/Set-builder_notation">Set-builder notation</a>
 </p></div></div>
 

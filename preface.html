@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-12-10 Sat 17:07 -->
+<!-- 2023-03-06 Mon 10:13 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -30,7 +30,7 @@
       displayIndent: '0em'
     },
     output: {
-      font: 'mathjax-tex',
+      font: 'mathjax-dejavu',
       displayOverflow: 'overflow'
     }
   };
@@ -39,7 +39,7 @@
 <script
   id="MathJax-script"
   async
-  src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_HTML">
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 </head>
 <body>
@@ -47,7 +47,7 @@
 <div class="header">
 <link rel="stylesheet" href="hamb.css">
 <link rel="stylesheet" href="tufte.css">
-<img src="./images/heading6.png"  style="padding: 0px 0px 22px 0px" alt="3-d graph" class="center">
+<img src="./images/square_partitioned_into_6_similar_rectangles_henderson_small.png"  style="padding: 0px 0px 0px 0px" alt="3-d graph" class="center">
 
 <p>
 
@@ -80,6 +80,8 @@
       <a href="preliminaries.html" target="_blank"><li>Rabbit Holes</li></a>
       <li>Numbers</li>
       <ul>
+         <a href="HRGettingStarted1.html" target="_blank"><li>Getting Started 1</li></a>
+         <a href="HRGettingStarted2.html" target="_blank"><li>Getting Started 2</li></a>
          <a href="numbers1.html" target="_blank"><li>Numbers 1</li></a>
          <a href="numbers2.html" target="_blank"><li>Numbers 2</li></a>
       </ul>
@@ -89,9 +91,9 @@
 </div>
 </p>
 
-<div id="outline-container-org494f844" class="outline-2">
-<h2 id="org494f844">Preface</h2>
-<div class="outline-text-2" id="text-org494f844">
+<div id="outline-container-org800cbef" class="outline-2">
+<h2 id="org800cbef">Preface</h2>
+<div class="outline-text-2" id="text-org800cbef">
 <img src="./images/meitner.jpg" width="725px" style="padding: 15px 0px 0px 0px" alt="Lise Meitner" class="center">
 <span class="cap">Lise Meitner</span>
 
@@ -105,9 +107,9 @@ Life doesn&rsquo;t have to be easy if it&rsquo;s rich in content.<br />
 </blockquote></div>
 </div>
 
-<div id="outline-container-orgcd68da5" class="outline-3">
-<h3 id="orgcd68da5">Getting math running on a computer</h3>
-<div class="outline-text-3" id="text-orgcd68da5">
+<div id="outline-container-org09d01df" class="outline-3">
+<h3 id="org09d01df">Getting math running on a computer</h3>
+<div class="outline-text-3" id="text-org09d01df">
 <p>
 <label for="mn-demo" class="margin-toggle"></label>
 <input type="checkbox" id="mn-demo" class="margin-toggle">
@@ -134,11 +136,11 @@ actually get the science right. That is to say,
 
 <div class="epigraph"><blockquote>
 <p>
-<font color = "#650d1c" size = "5%">there&rsquo;s no magic, no
-special effects, no superheroes with super-human powers, no hip
-grade-schooler who hacks Pentagon computers in three seconds; instead,
-just a bunch of ordinary-looking people from disparate backgrounds
-putting their heads together to solve a critical
+<font color = "#650d1c" size = "5%">&#x2026;there is no magic, no
+special effects, no superheroes with super-human powers, no hip,
+genius grade-schooler who hacks Pentagon computers in three seconds;
+instead, just a bunch of ordinary-looking people from disparate
+backgrounds putting their heads together to solve a critical
 problem.</font>
 </p>
 
@@ -149,7 +151,8 @@ Why is this so special?  Because during the process of finding the
 answer we see the math coming out of books, out of heads, and being
 put to work on a real-world, life-or-death problem. The icing on the
 cake is the depiction of the team getting their just-delivered IBM
-mainframe computer (that no one knows how to run) to help them.
+mainframe computer (that no one knows how to run) to help them crunch
+the numbers.
 </p>
 
 <div class="epigraph"><blockquote>
@@ -168,7 +171,7 @@ computer &#x2014; are doing computations big and small in every corner of
 the world. Yes, most of these calculations are relatively simple, but
 many are quite complex. This is the sort of math that, pre-Computer
 Age, would have been found only in dense books and dry collections of
-tables, on classroom and office blackboards, embodied in mechanical
+tables, on classroom and office blackboards, embedded in mechanical
 contraptions or analog electrical circuits, and, most mysteriously, as
 &ldquo;mental representations&rdquo; in the brains of that small cadre of people
 called <i>mathematicians</i>, <i>physicists</i> and <i>engineers</i>.
@@ -200,9 +203,9 @@ on the computer.
 </div>
 </div>
 
-<div id="outline-container-org429f695" class="outline-3">
-<h3 id="org429f695">Code is math is code is math&#x2026;</h3>
-<div class="outline-text-3" id="text-org429f695">
+<div id="outline-container-orgafebcbe" class="outline-3">
+<h3 id="orgafebcbe">Code is math is code is math&#x2026;</h3>
+<div class="outline-text-3" id="text-orgafebcbe">
 <p>
 As computer scientist David Schmidt said
 </p>
@@ -402,9 +405,9 @@ own CAS, but we&rsquo;ll go beyond calculation and into concepts.
 </div>
 </div>
 
-<div id="outline-container-org5700a24" class="outline-3">
-<h3 id="org5700a24">Math is abstraction</h3>
-<div class="outline-text-3" id="text-org5700a24">
+<div id="outline-container-org11ec90b" class="outline-3">
+<h3 id="org11ec90b">Math is abstraction</h3>
+<div class="outline-text-3" id="text-org11ec90b">
 <p>
 We believe anyone can do math, not because we&rsquo;re cheery, sunny
 optimists, but because it&rsquo;s just a fact. But why then is math so
@@ -470,9 +473,9 @@ ambiguity and confusion.
 </div>
 </div>
 
-<div id="outline-container-orga937dfc" class="outline-3">
-<h3 id="orga937dfc">Serial versus parallel</h3>
-<div class="outline-text-3" id="text-orga937dfc">
+<div id="outline-container-orgcd91f66" class="outline-3">
+<h3 id="orgcd91f66">Serial versus parallel</h3>
+<div class="outline-text-3" id="text-orgcd91f66">
 <img src="./images/BoPBinomial1.png" style="padding: 15px 0px 0px 0px" width="750" alt="Binomial Coefficients" class="center">
 <span class="cap">Proof of recursive formula for binomial coefficients. From <a href="https://www.bookofproofs.org/branches/recursive-formula-for-binomial-coefficients/">Book of Proofs</a></span>
 
@@ -505,9 +508,9 @@ computer.</font>
 </div>
 </div>
 
-<div id="outline-container-orgca40e65" class="outline-3">
-<h3 id="orgca40e65">Bad math</h3>
-<div class="outline-text-3" id="text-orgca40e65">
+<div id="outline-container-org198818b" class="outline-3">
+<h3 id="org198818b">Bad math</h3>
+<div class="outline-text-3" id="text-org198818b">
 <p>
 One big, <i>big</i> mistake in the teaching and learning of math is
 <i>conditioning</i>. When circus animal trainers train (torture) their
@@ -561,9 +564,9 @@ back&rdquo; idea.
 </div>
 </div>
 
-<div id="outline-container-org20e96eb" class="outline-3">
-<h3 id="org20e96eb">Editorial rant: The precarious state of STEM</h3>
-<div class="outline-text-3" id="text-org20e96eb">
+<div id="outline-container-orgc5e036c" class="outline-3">
+<h3 id="orgc5e036c">Editorial rant: The precarious state of STEM</h3>
+<div class="outline-text-3" id="text-orgc5e036c">
 <p>
 The American public K-12 math curriculum is designed to be a smooth,
 gradual on-ramp for further math, physics, and engineering studies at
@@ -668,9 +671,9 @@ will simply be links or side notes in the text.)
 </div>
 </div>
 
-<div id="outline-container-org82cd632" class="outline-3">
-<h3 id="org82cd632">A project-based, real-world approach</h3>
-<div class="outline-text-3" id="text-org82cd632">
+<div id="outline-container-org6ec4f37" class="outline-3">
+<h3 id="org6ec4f37">A project-based, real-world approach</h3>
+<div class="outline-text-3" id="text-org6ec4f37">
 <p>
 No doubt the typical, standard public school K-12 math curriculum is a
 well thought out, gentle and gradual on-ramp for most higher-ed STEM
@@ -704,9 +707,9 @@ what to do.
 </div>
 </div>
 
-<div id="outline-container-org3fa6762" class="outline-3">
-<h3 id="org3fa6762">&#x2026;and a real-world toolset</h3>
-<div class="outline-text-3" id="text-org3fa6762">
+<div id="outline-container-orgcaa6cc6" class="outline-3">
+<h3 id="orgcaa6cc6">&#x2026;and a real-world toolset</h3>
+<div class="outline-text-3" id="text-orgcaa6cc6">
 <p>
 Real-world work requires real-world tools. The first casualty of this
 logos is that we eschew &ldquo;graphing calculators.&rdquo; Why? <font
@@ -743,9 +746,9 @@ its power and versatility.
 </div>
 </div>
 
-<div id="outline-container-orgc9f896a" class="outline-3">
-<h3 id="orgc9f896a">The journey ahead; where are we going?</h3>
-<div class="outline-text-3" id="text-orgc9f896a">
+<div id="outline-container-org7f4e230" class="outline-3">
+<h3 id="org7f4e230">The journey ahead; where are we going?</h3>
+<div class="outline-text-3" id="text-org7f4e230">
 <p>
 Where are we going? What do we expect to achieve? The Computer Age has
 forced a split between what is now known as <i>continuous</i> math, i.e.,
@@ -806,9 +809,9 @@ the most noble path there is. And so with no further ado, let&rsquo;s start.
 </div>
 </div>
 
-<div id="outline-container-org13b6499" class="outline-3">
-<h3 id="org13b6499">Novalis Technical Preparatory School</h3>
-<div class="outline-text-3" id="text-org13b6499">
+<div id="outline-container-org8547232" class="outline-3">
+<h3 id="org8547232">Novalis Technical Preparatory School</h3>
+<div class="outline-text-3" id="text-org8547232">
 <p>
 CIMIC will follow the learning arc of the (fictitious) von der
 Surwitzes siblings, twins Ute and Uwe, and one-year-younger
@@ -889,9 +892,9 @@ everyone&rsquo;s changes.
 </div>
 </div>
 
-<div id="outline-container-orgb10fc9d" class="outline-3">
-<h3 id="orgb10fc9d">How to start doing CIMIC</h3>
-<div class="outline-text-3" id="text-orgb10fc9d">
+<div id="outline-container-orgea9baa5" class="outline-3">
+<h3 id="orgea9baa5">How to start doing CIMIC</h3>
+<div class="outline-text-3" id="text-orgea9baa5">
 <p>
 You should start by working through the Rabbit Hole page, again,
 taking on all the R<sub>C</sub> -holes. For example, really get going with the
@@ -903,9 +906,9 @@ but again, this will rely on rabbit hole knowledge.
 </div>
 </div>
 
-<div id="outline-container-orgd84a8ab" class="outline-3">
-<h3 id="orgd84a8ab">Bottom line&#x2026;</h3>
-<div class="outline-text-3" id="text-orgd84a8ab">
+<div id="outline-container-org164aba3" class="outline-3">
+<h3 id="org164aba3">Bottom line&#x2026;</h3>
+<div class="outline-text-3" id="text-org164aba3">
 <p>
 You still need a bottom line? All right then,
 </p>
@@ -926,9 +929,9 @@ keeps getting better and better, richer and more rewarding.
 </div>
 </div>
 
-<div id="outline-container-org20dcace" class="outline-3">
-<h3 id="org20dcace">How to get help</h3>
-<div class="outline-text-3" id="text-org20dcace">
+<div id="outline-container-org7c5ede4" class="outline-3">
+<h3 id="org7c5ede4">How to get help</h3>
+<div class="outline-text-3" id="text-org7c5ede4">
 <p>
 Help for this material is readily available and, yes, better than
 ever. In other words, you can&rsquo;t fail.

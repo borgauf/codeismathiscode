@@ -64,8 +64,12 @@ module GS1 where
 #+end_src
 
 #+RESULTS: 6b14996d-7528-4c2a-a081-ccd244799b49
-: ghci> 2
-
+: <interactive>:2:1-5: warning: [-Wtype-defaults]
+:     • Defaulting the following constraints to type ‘Integer’
+:         (Show a0) arising from a use of ‘print’ at <interactive>:2:1-5
+:         (Num a0) arising from a use of ‘it’ at <interactive>:2:1-5
+:     • In a stmt of an interactive GHCi command: print it
+: 2
 
 * Monday at the library part 1
 

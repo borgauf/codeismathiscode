@@ -67,11 +67,11 @@ path[fn:1]. This is a rare moment in a Hollywood film where they
 actually get the science right. That is to say,
 
 #+begin_quote
-@@html:<font color = "#650d1c" size = "5%">@@there's no magic, no
-special effects, no superheroes with super-human powers, no hip
-grade-schooler who hacks Pentagon computers in three seconds; instead,
-just a bunch of ordinary-looking people from disparate backgrounds
-putting their heads together to solve a critical
+@@html:<font color = "#650d1c" size = "5%">@@...there is no magic, no
+special effects, no superheroes with super-human powers, no hip,
+genius grade-schooler who hacks Pentagon computers in three seconds;
+instead, just a bunch of ordinary-looking people from disparate
+backgrounds putting their heads together to solve a critical
 problem.@@html:</font>@@
 #+end_quote
 
@@ -79,7 +79,8 @@ Why is this so special?  Because during the process of finding the
 answer we see the math coming out of books, out of heads, and being
 put to work on a real-world, life-or-death problem. The icing on the
 cake is the depiction of the team getting their just-delivered IBM
-mainframe computer (that no one knows how to run) to help them.
+mainframe computer (that no one knows how to run) to help them crunch
+the numbers.
 
 #+begin_quote
 @@html:<font color = "#650d1c" size = 5%>@@The bottom-line takeaway:
@@ -93,7 +94,7 @@ computer --- are doing computations big and small in every corner of
 the world. Yes, most of these calculations are relatively simple, but
 many are quite complex. This is the sort of math that, pre-Computer
 Age, would have been found only in dense books and dry collections of
-tables, on classroom and office blackboards, embodied in mechanical
+tables, on classroom and office blackboards, embedded in mechanical
 contraptions or analog electrical circuits, and, most mysteriously, as
 "mental representations" in the brains of that small cadre of people
 called /mathematicians/, /physicists/ and /engineers/.
@@ -105,7 +106,6 @@ amazing-ness of this transfer of math from paper, chalk, and thought
 into running code on very fast machines in our modern
 world.@@html:</font>@@
 #+end_quote
-
 
 Learning the skills necessary for turning math and science into code
 will only increase in importance as we advance into the future. Our
@@ -405,7 +405,7 @@ along. When appropriate, a list of R-holes with the 🐇 symbol will be
 listed at the top of topic headings. (Note: smaller, side excursions
 will simply be links or side notes in the text.)
 
-** A concept-based, real-world approach
+** A project-based, real-world approach
 
 No doubt the typical, standard public school K-12 math curriculum is a
 well thought out, gentle and gradual on-ramp for most higher-ed STEM
