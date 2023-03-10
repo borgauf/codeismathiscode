@@ -405,7 +405,7 @@ along. When appropriate, a list of R-holes with the 🐇 symbol will be
 listed at the top of topic headings. (Note: smaller, side excursions
 will simply be links or side notes in the text.)
 
-** A project-based, real-world approach
+** A concept-based, real-world approach
 
 No doubt the typical, standard public school K-12 math curriculum is a
 well thought out, gentle and gradual on-ramp for most higher-ed STEM
