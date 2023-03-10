@@ -1,29 +1,18 @@
-# # -*- mode: org -*-
-# # -*- coding: utf-8 -*-
-# Place title here
-#+TITLE:
-# Place author here
+# # -*- mode: org -*- coding: utf-8 -*-
+#+TITLE: Axioms, theorems, proofs
 #+AUTHOR:
-# Place email here
 #+EMAIL: 
-# Call borgauf/insert-dateutc.1 here
 #+DATE: 
-# #+Filetags: :SAGA
-# #+TAGS: experiment_nata(e) idea_nata(i) chem_nata(c) logs_nata(l) y_stem(y)
 #+LANGUAGE:  en
-# #+INFOJS_OPT: view:showall ltoc:t mouse:underline path:http://orgmode.org/org-info.js
-# #+HTML_HEAD: <link rel="stylesheet" href="../data/stylesheet.css" type="text/css">
+# #+INFOJS_OPT: view:showall ltoc:t mouse:underline
 #+HTML_HEAD: <link rel="stylesheet" href="./tufte.css" type="text/css">
+#+INCLUDE: "./header.org" :minlevel 1
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
-#+OPTIONS: H:15 num:15 toc:nil \n:nil @:t ::t |:t _:{} *:t ^:{} prop:nil
-# #+OPTIONS: prop:t
-# This makes MathJax not work
-# #+OPTIONS: tex:imagemagick
-# this makes MathJax work
+#+EXPORT_FILE_NAME: AxiomsTheoremsProof.html
+#+OPTIONS: H:15 num:nil toc:nil \n:nil @:t ::t |:t _:{} *:t ^:{} prop:nil
 #+OPTIONS: tex:t
-# This also replaces MathJax with images, i.e., don’t use.
-# #+OPTIONS: tex:dvipng
+#+OPTIONS: html-postamble:nil
 #+LATEX_CLASS: article
 #+LATEX_CLASS_OPTIONS: [american]
 # Setup tikz package for both LaTeX and HTML export:
@@ -32,7 +21,6 @@
 #+LaTeX_HEADER: \usepackage{pgfplots}
 #+LaTeX_HEADER: \usepackage{sansmath}
 #+LaTeX_HEADER: \usepackage{mathtools}
-#+HTML_MATHJAX: align: left indent: 5em tagside: left font: Neo-Euler
 #+PROPERTY: header-args:latex+ :packages '(("" "tikz"))
 #
 #+PROPERTY: header-args:latex+ :exports results :fit yes
@@ -40,15 +28,15 @@
 #+STARTUP: showall
 #+STARTUP: align
 #+STARTUP: indent
+#+STARTUP: shrink
 # This makes MathJax/LaTeX appear in buffer (UTF-8)
 #+STARTUP: entitiespretty
-# #+STARTUP: logdrawer
-# This makes pictures appear in buffer
-# #+STARTUP: inlineimages
+# #+STARTUP: logdrawer # This makes pictures appear in buffer
+#+STARTUP: inlineimages
 #+STARTUP: fnadjust
-
-#+OPTIONS: html-style:nil
-# #+BIBLIOGRAPHY: ref plain
+# #+OPTIONS: html-style:nil
+#+html_head_extra: <style> .title { display: none; } </style>
+#+html_head_extra: <style> caption.t-bottom { caption-side: bottom; } </style>
 
 @@html:<label for="mn-demo" class="margin-toggle"></label>
 <input type="checkbox" id="mn-demo" class="margin-toggle">

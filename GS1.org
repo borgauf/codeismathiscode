@@ -80,29 +80,24 @@ meet in a reserved study room at the main university library to go
 over what their /Introduction to Computer Science/ teacher, Professor
 Chandra, had discussed with them at the Novalis Tech Open House.
 
-Checking Professor Chandra's course syllabus on her website before,
-they had already made online purchases of the main text for the
-course, /The Haskell Road to Logic, Maths and Programming/ by Kees
-Doets and Jan van Eijck. During the open house at the convention wing
-of the student center on the previous Saturday, they had sat down
-together at a table with the professor as she paged through the text
-and talked extemporaneously about what parts she would like to handle
-and how. She also showed them some code on her laptop. She invited
-them to email her with any questions.
-
-The professor encouraged them to dive into to the logic and sets
-prereqs, alongside of the first few chapters of /The Haskell Road.../,
-as well as to get through as much /Learn You a Haskell.../ as
-possible.
+Checking Professor Chandra's course syllabus on her website, they had
+already made online purchases of the main text for the course, /The
+Haskell Road to Logic, Maths and Programming/ by Kees Doets and Jan
+van Eijck. During the open house at student center on the previous
+Saturday, they had sat down with the professor and gone over the book,
+she talking extemporaneously about what parts she would like to handle
+and how. The professor encouraged them to dive into to the logic and
+sets prereqs noted on her website, as well as to get through as much
+/Learn You a Haskell.../ as possible. They would eventually look into
+other languages, but the first stop would be Haskell.
 
 Ursula von der Surwitz has plugged in her laptop to the room's big 4K
-monitor and is scrolling through some of her personal notes.
-
+monitor and scrolls through some of her personal notes.
 
 @@html:<span class="fraktur">@@𝔘𝔯𝔰𝔲𝔩𝔞:@@html:</span>@@ So like
-Professor Chandra said on Saturday, we're going to rely heavily on
-logic and set theory. \\
-[murmurs of agreement and then silence] \\
+Professor Chandra said on Saturday, we're going to rely on logic and
+set theory. \\
+[murmurs of agreement] \\
 @@html:<span class="fraktur">@@𝔘𝔯𝔰𝔲𝔩𝔞:@@html:</span>@@ [continuing] It
 seems a bit ominous. \\
 @@html:<span class="fraktur">@@𝔘𝔴𝔢:@@html:</span>@@ Out with the old
@@ -113,18 +108,18 @@ saying, comp-sci math is sort of a grab-bag of higher math, it's bits
 and pieces of what you'd be learning as a math major after all the
 calculus and differential equations and linear algebra. \\
 [murmurs of agreement] \\
-@@html:<span class="fraktur">@@𝔘𝔴𝔢:@@html:</span>@@ Like the examples
-she gave, you need set theory to properly define relations and
-functions. \\
+@@html:<span class="fraktur">@@𝔘𝔴𝔢:@@html:</span>@@ Like she was
+showing us in the book, you need set theory to properly define
+relations and functions. \\
 [more agreement murmurs] \\
 @@html:<span class="fraktur">@@𝔘𝔯𝔰𝔲𝔩𝔞:@@html:</span>@@ Well, like
-Vati[fn:1] said, his math degree really smoothed the way for his
+/Vati/[fn:1] said, his math degree really smoothed the way for his
 chemical engineering studies. \\
 @@html:<span class="fraktur">@@𝔘𝔴𝔢:@@html:</span>@@ Get as much math
 as you can as early as you can. That seems to be the plan everywhere
 these days. \\
 [murmurs of agreement] \\
-@@html:<span class="fraktur">@@𝔘𝔱𝔢:@@html:</span>@@ So I'm psyched. \\
+@@html:<span class="fraktur">@@𝔘𝔱𝔢:@@html:</span>@@ I'm psyched. \\
 [She looks around and receives nods] \\
 @@html:<span class="fraktur">@@𝔘𝔱𝔢:@@html:</span>@@ [continuing] I'm
 psyched because --- as she said --- this course is totally
@@ -151,9 +146,9 @@ to say, the /Learn You a Haskell.../ helped. \\
 @@html:<span class="fraktur">@@𝔘𝔱𝔢:@@html:</span>@@ I think it's cool
 how the whole prime number test, the greatest common divisor all
 blended together. \\
-@@html:<span class="fraktur">@@𝔘𝔴𝔢:@@html:</span>@@ But I'm glad I'd
-seen the prime factorization way of figuring out unlike-denominator
-math back in Kiel. /If/ I can remember it. \\
+@@html:<span class="fraktur">@@𝔘𝔴𝔢:@@html:</span>@@ But I'm glad I've
+already seen the prime factorization way of figuring out
+unlike-denominator math back in Kiel. /If/ I can remember it. \\
 [affirmative murmurs] \\
 @@html:<span class="fraktur">@@𝔘𝔱𝔢:@@html:</span>@@ Oh, by the way,
 does anyone remember why the Greeks said, for example, $7$ /measures/
@@ -166,15 +161,16 @@ out a length of $35$ perfectly? \\
 remember the whole Euclid thing about the /transitivity of equality/?
 [murmurs of affirmation] \\
 @@html:<span class="fraktur">@@𝔘𝔯𝔰𝔲𝔩𝔞:@@html:</span>@@ Yeah, Herr
-Adriansen, Danish minority from Schleswig. Cool accent. Made fun of
-Frisians. He gave us that little talk about why old-school Euclidean
-Geometry was so important. \\
+Adriansen, our Geometry teacher, Danish minority from Schleswig. Cool
+accent. Made fun of Frisians. He gave us that little talk about why
+old-school Euclidean Geometry was so important. \\
 @@html:<span class="fraktur">@@𝔘𝔴𝔢:@@html:</span>@@ Yes, because you
 have to get used to the idea that math is built up from logical
-deductions that in turn are based on axioms. \\
-@@html:<span class="fraktur">@@𝔘𝔱𝔢:@@html:</span>@@ And he complained
-bitterly about how math was being taught, how it was sliding into just
-circus animals learning by conditioning. \\
+deductions that in turn are based on axioms. It's not magic, it's
+logic. \\
+@@html:<span class="fraktur">@@𝔘𝔱𝔢:@@html:</span>@@ He complained
+bitterly about how math was being taught these days, how it was
+sliding into just circus animals learning by conditioning. \\
 @@html:<span class="fraktur">@@𝔘𝔴𝔢:@@html:</span>@@ The whole, /when
 you see this, do this/ approach to math.[fn:2]
 
@@ -930,7 +926,7 @@ easy getting there. \\
 
 [fn:1] German for /dad/, /papa/.
 
-[fn:2] Take a break and check out this theory treatment.
+[fn:2] Take a break and check out [[file:AxiomsTheoremsProof.html][this]] theory treatment.
 
 [fn:3] Professor Chandra has demonstrated at the Racket command line
 how rationals could be directly added, e.g., \\
